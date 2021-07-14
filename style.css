@@ -1,0 +1,178 @@
+* {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+q {
+  font-family: 'Satisfy', cursive;
+  font-weight: 200;
+}
+a {
+  text-decoration: none;
+  color: #ededed;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+h1,
+h2,
+h4 {
+  font-family: 'Fredoka One', cursive;
+}
+.hover h1 {
+  color: #ffc947 !important;
+}
+
+.hover h1:hover {
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* 
+
+  HEADER
+
+*/
+
+#header {
+  background-color: #0a1931;
+}
+
+#header h1,
+#header p {
+  color: #ededed;
+}
+
+#header .container {
+  min-height: 100vh;
+}
+
+/* ABOUT ME */
+
+#aboutMe .container .row:nth-child(2) {
+  padding-top: 4rem;
+}
+#aboutMe a {
+  border: 0px;
+  background-color: #185adb;
+  transition: 0.5s;
+}
+
+#aboutMe a:hover {
+  box-shadow: 2px 2px 5px grey;
+}
+
+#header a {
+  transition: 0.5s ease;
+}
+
+#header a:hover {
+  transform: translateY(-0.6rem);
+  color: #ffc947;
+}
+
+/* 
+SKILLS
+*/
+
+#skills {
+  background-color: #0a1931;
+}
+
+#skills h2 {
+  color: #ededed;
+}
+
+#skills img {
+  width: 20rem;
+}
+
+/* 
+Projects
+*/
+
+#projects a {
+  border: 0px;
+  background-color: #185adb;
+  transition: 0.5s;
+}
+
+#projects a:hover {
+  box-shadow: 1px 1px 5px grey;
+}
+
+#projects .container {
+  padding-bottom: 8rem;
+}
+
+/* 
+Footer
+*/
+
+#footer {
+  background-color: #0a1931;
+}
+
+#footer p,
+#footer h4 {
+  color: #ededed;
+}
+
+#footer h4 {
+  color: #185adb;
+}
+
+#footer img {
+  width: 15rem;
+}
+
+#footer a {
+  transition: 0.5s ease;
+}
+
+#footer a:hover {
+  color: #ffc947;
+}
+
+#footer .footer-link a:hover {
+  color: #ffc947;
+  transform: rotate(360deg);
+}
