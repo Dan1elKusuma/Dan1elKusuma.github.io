@@ -2,16 +2,6 @@
   font-family: 'Signika Negative', sans-serif;
 }
 
-body {
-  overflow: auto;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    overflow: auto;
-  }
-}
-
 p {
   font-weight: 200;
   font-size: 1.2rem;
@@ -72,6 +62,23 @@ h4 {
   }
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffc947;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e6b646;
+}
 /* 
 
   HEADER
@@ -91,6 +98,15 @@ h4 {
   min-height: 100vh;
 }
 
+#header a {
+  transition: 0.5s ease;
+}
+
+#header a:hover {
+  transform: translateY(-0.6rem);
+  color: #ffc947;
+}
+
 /* ABOUT ME */
 
 #aboutMe .container .row:nth-child(2) {
@@ -106,13 +122,8 @@ h4 {
   box-shadow: 2px 2px 5px grey;
 }
 
-#header a {
-  transition: 0.5s ease;
-}
-
-#header a:hover {
-  transform: translateY(-0.6rem);
-  color: #ffc947;
+#aboutMe .container {
+  padding-bottom: 5rem;
 }
 
 /* 
@@ -129,6 +140,10 @@ SKILLS
 
 #skills img {
   width: 20rem;
+}
+
+#skills .container {
+  padding-bottom: 5rem;
 }
 
 /* 
