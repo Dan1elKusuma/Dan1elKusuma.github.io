@@ -2,6 +2,11 @@
   font-family: 'Signika Negative', sans-serif;
 }
 
+span {
+  font-weight: bold;
+  color: #0d6efd;
+}
+
 p {
   font-weight: 200;
   font-size: 1.2rem;
@@ -119,7 +124,8 @@ h4 {
 }
 
 #aboutMe a:hover {
-  box-shadow: 2px 2px 5px grey;
+  transform: scale(1.01);
+  box-shadow: 2px 2px 5px black;
 }
 
 #aboutMe .container {
